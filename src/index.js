@@ -199,3 +199,23 @@ const newNumArr = numArr.filter((num) => {
   return num % 2 === 1;
 });
 console.log(newNumArr);
+
+/**
+ * 三項演算子
+ */
+// ある条件 ? 条件がtrueの時 : 条件がfalseの時
+const value1 = 1 > 0 ? "true" : "false";
+console.log(value1);
+
+const number = "1300";
+const formattedNum =
+  typeof number === "number"
+    ? number.toLocaleString()
+    : "数値を入力してください";
+console.log(formattedNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です。";
+};
+console.log(checkSum(20, 20));
+console.log(checkSum(60, 50));
