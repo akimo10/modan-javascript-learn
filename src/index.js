@@ -166,3 +166,36 @@ const arr8 = arr4;
 arr8[0] = 100;
 console.log(arr8);
 console.log(arr4);
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+const nameArr = ["田中", "山田", "aki"];
+
+// 従来のループ
+for (let index = 0; index < nameArr.length; index++) {
+  console.log(`${index + 1}番目は${nameArr[index]}です`);
+}
+
+// mapを使ったループ
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+// mapの第2引数にはindex番号を取得する
+nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+
+const newNameArr = nameArr.map((name) => {
+  if (name === "aki") {
+    return name;
+  }
+  return `${name}さん`;
+});
+console.log(newNameArr);
+
+// filterを使った処理
+const numArr = [1, 2, 3, 4, 5];
+const newNumArr = numArr.filter((num) => {
+  return num % 2 === 1;
+});
+console.log(newNumArr);
