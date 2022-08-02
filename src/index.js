@@ -91,3 +91,28 @@ const func5 = (num1, num2) => {
   return num1 + num2;
 };
 console.log(func5(6, 7));
+
+/**
+ * 分割代入
+ */
+
+//オブジェクトで分割代入
+const myProfile = {
+  myname: "aki",
+  myage: 30
+};
+const message3 = `名前は${myProfile.myname}です。年齢は${myProfile.myage}です。`;
+console.log(message3);
+
+const { myname, myage } = myProfile;
+const message4 = `名前は${name}です。年齢は${age}です。`;
+console.log(message4);
+
+//配列で分割代入
+const myProfile2 = ["aki", 30];
+const message5 = `名前は${myProfile2[0]}です。年齢は${myProfile2[1]}です。`;
+console.log(message5);
+
+const [myname2, myage2] = myProfile2;
+const message6 = `名前は${myname2}です。年齢は${myage2}です。`;
+console.log(message6);
