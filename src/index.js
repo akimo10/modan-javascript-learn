@@ -219,3 +219,17 @@ const checkSum = (num1, num2) => {
 };
 console.log(checkSum(20, 20));
 console.log(checkSum(60, 50));
+
+/**
+ * 論理演算子の本当の意味を知ろう　&& ||
+ * 単純にor andではない・・・
+ */
+//　|| は左側がfalseなら右側を返す
+const num3 = null;
+const fee = num3 || "金額未設定です";
+console.log(fee);
+
+// && は左側がtrueなら右側を返す
+const num4 = 100;
+const fee2 = num4 && "何か設定されています";
+console.log(fee2);
