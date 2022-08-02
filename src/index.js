@@ -116,3 +116,16 @@ console.log(message5);
 const [myname2, myage2] = myProfile2;
 const message6 = `名前は${myname2}です。年齢は${myage2}です。`;
 console.log(message6);
+
+/**
+ * デフォルト値、引数等
+ */
+const sayHello = (name) => console.log(`こんにちは！${name}さん`);
+sayHello("aki");
+//引数がないとundefinedで出力される。
+sayHello();
+
+const sayHello2 = (name = "ゲスト") => console.log(`こんにちは！${name}さん`);
+sayHello2("aki");
+//引数がないとundefinedで出力される。
+sayHello2();
